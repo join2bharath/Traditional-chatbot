@@ -9,7 +9,7 @@
 
   /* ── DOM refs ── */
   const fab        = document.getElementById("chat-fab");
-  const chatWin    = document.getElementById("chat-window");
+  const chatWin    = document.getElementById("chat-window-page") || document.getElementById("chat-window");
   const closeBtn   = document.getElementById("chat-close");
   const msgArea    = document.getElementById("chat-messages");
   const inputEl    = document.getElementById("chat-input");
