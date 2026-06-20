@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Bharath Culture Bot — Explore India's Rich Cultural Heritage</title>
+  <meta name="description"
+    content="Discover the traditions, dance forms, food, festivals, martial arts, languages, and deities of all 28 Indian states through a cultural chatbot." />
+  <meta name="keywords"
+    content="India culture, Indian states, Bharath culture bot, chatbot, Indian traditions, festivals, classical dance, Indian food" />
+  <meta property="og:title" content="Bharath Culture Bot" />
+  <meta property="og:description" content="Your guide to India's incredible cultural heritage." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <a class="nav-brand" href="#hero" aria-label="Bharath Culture Bot Home">
+    <span class="lotus-icon" aria-hidden="true">🪷</span>
+    Bharath Culture Bot
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#states">States</a></li>
+    <li><a href="#features">Features</a></li>
+    <li>
+      <a href="#"
+         class="nav-cta"
+         id="nav-chat-btn"
+         aria-label="Open Chat"
+         onclick="prefillChat('');return false;">
+        💬 Chat Now
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" id="hero" aria-label="Hero Section">
+  <div class="hero-content">
+
+    <h1 class="hero-title">
+      <span>Bharath</span> Culture Bot
+    </h1>
+
+    <p class="hero-sub">Incredible India, One Conversation at a Time</p>
+
+    <p class="hero-tagline">
+      Explore the traditions, dances, cuisines, festivals, martial arts,
+      languages, and sacred deities of all <strong>28 states &amp; 8 union
+      territories</strong> of India.
+    </p>
+
+    <div class="hero-cta-group">
+      <button class="btn-primary" id="hero-chat-btn"
+              onclick="prefillChat('')" aria-label="Start chatting">
+        💬 Start Exploring
+      </button>
+      <a class="btn-outline" href="#states" aria-label="Browse Indian states">
+        🗺️ Browse States
+      </a>
+    </div>
+
+    <div class="hero-divider" aria-hidden="true">
+      <hr /><span>🕉️</span><hr />
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section class="section about-section" id="about" aria-labelledby="about-title">
+  <div class="section-inner">
+    <div class="about-grid">
+
+      <!-- Text side -->
+      <div class="about-text reveal">
+        <span class="section-label">What is Bharath Culture Bot?</span>
+        <h2 class="section-title" id="about-title">
+          Your Intelligent Guide to<br />Indian Heritage
+        </h2>
+        <p class="section-desc">
+          Bharath Culture Bot is an intelligent assistant trained to answer questions
+          about India's diverse cultural tapestry — covering all
+          <strong>28 states and 8 union territories</strong>.
+          Whether you're curious about Kerala's ancient martial art
+          Kalaripayattu, the silk weaves of Varanasi, Durga Puja
+          celebrations in West Bengal, or the sacred temples of Tamil Nadu —
+          just ask!
+        </p>
+
+        <!-- 7 Categories -->
+        <div class="categories-grid">
+          <div class="category-pill">
+            <span class="cat-icon">⚔️</span> Martial / Fight Forms
+          </div>
+          <div class="category-pill">
+            <span class="cat-icon">💃</span> Classical &amp; Folk Dance
+          </div>
+          <div class="category-pill">
+            <span class="cat-icon">👘</span> Traditional Dress
+          </div>
+          <div class="category-pill">
+            <span class="cat-icon">🍛</span> Cuisine &amp; Food
+          </div>
+          <div class="category-pill">
+            <span class="cat-icon">🪔</span> Festivals &amp; Celebrations
+          </div>
+          <div class="category-pill">
+            <span class="cat-icon">🗣️</span> Languages &amp; Scripts
+          </div>
+          <div class="category-pill" style="grid-column: span 2;">
+            <span class="cat-icon">🛕</span> Deities &amp; Religious Traditions
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="about-stats" style="margin-top:2rem;">
+          <div class="stat-card">
+            <div class="stat-number">28</div>
+            <div class="stat-label">States</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Categories</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Questions</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual side -->
+      <div class="about-visual reveal">
+        <div class="mandala-card">
+          <div class="mandala-ring r1"></div>
+          <div class="mandala-ring r2"></div>
+          <div class="mandala-ring r3"></div>
+          <span class="mandala-emoji">🌸</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     STATES GRID SECTION
+     ============================================================ -->
+<section class="section states-section" id="states" aria-labelledby="states-title">
+  <div class="section-inner">
+    <span class="section-label">Explore by State</span>
+    <h2 class="section-title" id="states-title">All 28 States of India</h2>
+    <p class="section-desc">
+      Click any state to instantly ask the bot about its culture,
+      traditions, food, and more.
+    </p>
+
+    <div class="states-grid reveal" role="list">
+
+      <div class="state-card" role="listitem" tabindex="0" aria-label="Chat about Andhra Pradesh"
+           onclick="prefillChat('Andhra Pradesh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Andhra Pradesh')">
+        <div class="state-emoji">🏝️</div>
+        <div class="state-name">Andhra Pradesh</div>
+        <div class="state-capital">Amaravati</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Arunachal Pradesh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Arunachal Pradesh')">
+        <div class="state-emoji">🏔️</div>
+        <div class="state-name">Arunachal Pradesh</div>
+        <div class="state-capital">Itanagar</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Assam')"
+           onkeydown="if(event.key==='Enter')prefillChat('Assam')">
+        <div class="state-emoji">🫖</div>
+        <div class="state-name">Assam</div>
+        <div class="state-capital">Dispur</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Bihar')"
+           onkeydown="if(event.key==='Enter')prefillChat('Bihar')">
+        <div class="state-emoji">🪔</div>
+        <div class="state-name">Bihar</div>
+        <div class="state-capital">Patna</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Chhattisgarh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Chhattisgarh')">
+        <div class="state-emoji">🌿</div>
+        <div class="state-name">Chhattisgarh</div>
+        <div class="state-capital">Raipur</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Goa')"
+           onkeydown="if(event.key==='Enter')prefillChat('Goa')">
+        <div class="state-emoji">🏖️</div>
+        <div class="state-name">Goa</div>
+        <div class="state-capital">Panaji</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Gujarat')"
+           onkeydown="if(event.key==='Enter')prefillChat('Gujarat')">
+        <div class="state-emoji">🎡</div>
+        <div class="state-name">Gujarat</div>
+        <div class="state-capital">Gandhinagar</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Haryana')"
+           onkeydown="if(event.key==='Enter')prefillChat('Haryana')">
+        <div class="state-emoji">🌾</div>
+        <div class="state-name">Haryana</div>
+        <div class="state-capital">Chandigarh</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Himachal Pradesh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Himachal Pradesh')">
+        <div class="state-emoji">🏔️</div>
+        <div class="state-name">Himachal Pradesh</div>
+        <div class="state-capital">Shimla</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Jharkhand')"
+           onkeydown="if(event.key==='Enter')prefillChat('Jharkhand')">
+        <div class="state-emoji">⛏️</div>
+        <div class="state-name">Jharkhand</div>
+        <div class="state-capital">Ranchi</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Karnataka')"
+           onkeydown="if(event.key==='Enter')prefillChat('Karnataka')">
+        <div class="state-emoji">🏯</div>
+        <div class="state-name">Karnataka</div>
+        <div class="state-capital">Bengaluru</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Kerala')"
+           onkeydown="if(event.key==='Enter')prefillChat('Kerala')">
+        <div class="state-emoji">🌴</div>
+        <div class="state-name">Kerala</div>
+        <div class="state-capital">Thiruvananthapuram</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Madhya Pradesh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Madhya Pradesh')">
+        <div class="state-emoji">🐅</div>
+        <div class="state-name">Madhya Pradesh</div>
+        <div class="state-capital">Bhopal</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Maharashtra')"
+           onkeydown="if(event.key==='Enter')prefillChat('Maharashtra')">
+        <div class="state-emoji">🥁</div>
+        <div class="state-name">Maharashtra</div>
+        <div class="state-capital">Mumbai</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Manipur')"
+           onkeydown="if(event.key==='Enter')prefillChat('Manipur')">
+        <div class="state-emoji">💃</div>
+        <div class="state-name">Manipur</div>
+        <div class="state-capital">Imphal</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Meghalaya')"
+           onkeydown="if(event.key==='Enter')prefillChat('Meghalaya')">
+        <div class="state-emoji">🌧️</div>
+        <div class="state-name">Meghalaya</div>
+        <div class="state-capital">Shillong</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Mizoram')"
+           onkeydown="if(event.key==='Enter')prefillChat('Mizoram')">
+        <div class="state-emoji">🎶</div>
+        <div class="state-name">Mizoram</div>
+        <div class="state-capital">Aizawl</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Nagaland')"
+           onkeydown="if(event.key==='Enter')prefillChat('Nagaland')">
+        <div class="state-emoji">🦅</div>
+        <div class="state-name">Nagaland</div>
+        <div class="state-capital">Kohima</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Odisha')"
+           onkeydown="if(event.key==='Enter')prefillChat('Odisha')">
+        <div class="state-emoji">🛕</div>
+        <div class="state-name">Odisha</div>
+        <div class="state-capital">Bhubaneswar</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Punjab')"
+           onkeydown="if(event.key==='Enter')prefillChat('Punjab')">
+        <div class="state-emoji">🌾</div>
+        <div class="state-name">Punjab</div>
+        <div class="state-capital">Chandigarh</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Rajasthan')"
+           onkeydown="if(event.key==='Enter')prefillChat('Rajasthan')">
+        <div class="state-emoji">🏜️</div>
+        <div class="state-name">Rajasthan</div>
+        <div class="state-capital">Jaipur</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Sikkim')"
+           onkeydown="if(event.key==='Enter')prefillChat('Sikkim')">
+        <div class="state-emoji">🏔️</div>
+        <div class="state-name">Sikkim</div>
+        <div class="state-capital">Gangtok</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Tamil Nadu')"
+           onkeydown="if(event.key==='Enter')prefillChat('Tamil Nadu')">
+        <div class="state-emoji">🎭</div>
+        <div class="state-name">Tamil Nadu</div>
+        <div class="state-capital">Chennai</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Telangana')"
+           onkeydown="if(event.key==='Enter')prefillChat('Telangana')">
+        <div class="state-emoji">💎</div>
+        <div class="state-name">Telangana</div>
+        <div class="state-capital">Hyderabad</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Tripura')"
+           onkeydown="if(event.key==='Enter')prefillChat('Tripura')">
+        <div class="state-emoji">🌺</div>
+        <div class="state-name">Tripura</div>
+        <div class="state-capital">Agartala</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Uttar Pradesh')"
+           onkeydown="if(event.key==='Enter')prefillChat('Uttar Pradesh')">
+        <div class="state-emoji">🕌</div>
+        <div class="state-name">Uttar Pradesh</div>
+        <div class="state-capital">Lucknow</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('Uttarakhand')"
+           onkeydown="if(event.key==='Enter')prefillChat('Uttarakhand')">
+        <div class="state-emoji">⛰️</div>
+        <div class="state-name">Uttarakhand</div>
+        <div class="state-capital">Dehradun</div>
+      </div>
+
+      <div class="state-card" role="listitem" tabindex="0"
+           onclick="prefillChat('West Bengal')"
+           onkeydown="if(event.key==='Enter')prefillChat('West Bengal')">
+        <div class="state-emoji">🪄</div>
+        <div class="state-name">West Bengal</div>
+        <div class="state-capital">Kolkata</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FEATURES SECTION
+     ============================================================ -->
+<section class="section features-section" id="features" aria-labelledby="features-title">
+  <div class="section-inner">
+    <span class="section-label">Why Bharath Culture Bot?</span>
+    <h2 class="section-title" id="features-title">Everything in One Place</h2>
+
+    <div class="features-grid">
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🧠</div>
+        <h3 class="feature-title">Intelligent Guide</h3>
+        <p class="feature-desc">
+          Equipped with deep knowledge of Indian history and traditions,
+          providing accurate and nuanced answers about the rich cultural
+          heritage of every state.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🗺️</div>
+        <h3 class="feature-title">All 28 States</h3>
+        <p class="feature-desc">
+          From Arunachal Pradesh in the northeast to Kerala in the
+          southwest — every state and union territory's traditions
+          are covered in depth.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔄</div>
+        <h3 class="feature-title">Context-Aware Chat</h3>
+        <p class="feature-desc">
+          Remembers your conversation so you can ask natural follow-up
+          questions like "What about their festivals?" without repeating
+          the state name each time.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title">Instant Answers</h3>
+        <p class="feature-desc">
+          Click any state card and the chatbot opens pre-loaded with
+          your question — no typing needed to get started on your
+          cultural exploration.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔒</div>
+        <h3 class="feature-title">Secure by Design</h3>
+        <p class="feature-desc">
+          Your API key stays strictly server-side inside a Netlify
+          Function. The frontend never touches the AI API directly —
+          all requests flow through the secure serverless backend.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">📱</div>
+        <h3 class="feature-title">Fully Responsive</h3>
+        <p class="feature-desc">
+          Optimised for desktop, tablet, and mobile. The floating
+          chatbot widget adapts seamlessly across all screen sizes
+          with smooth animations.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-brand">🪷 Bharath Culture Bot</div>
+  <p>Celebrating the incredible diversity of India's cultural heritage.</p>
+  <p style="margin-top:0.75rem;">
+    Built with ❤️ on
+    <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a>
+  </p>
+  <p style="margin-top:0.5rem; font-size:0.75rem; opacity:0.5;">
+    © 2026 Bharath Culture Bot · For educational &amp; cultural exploration purposes.
+  </p>
+</footer>
+
+<script>
+  function prefillChat(stateName) {
+    if (stateName) {
+      window.location.href = '/chat?state=' + encodeURIComponent(stateName);
+    } else {
+      window.location.href = '/chat';
+    }
+  }
+
+  /* ── Scroll-reveal observer ── */
+  document.addEventListener("DOMContentLoaded", () => {
+    const revealEls = document.querySelectorAll(".reveal");
+    const observer  = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            observer.unobserve(e.target);
+          }
+        }),
+      { threshold: 0.12 }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>

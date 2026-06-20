@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Chat with Bharath Culture Bot — Explore Indian Culture</title>
+  <meta name="description"
+    content="Start a conversation with Bharath Culture Bot to learn about Indian state culture, including traditional dance, food, festivals, martial arts, dress, and deities." />
+  <meta property="og:title" content="Bharath Culture Bot Chat" />
+  <meta property="og:description" content="Your centered guide to India's rich cultural heritage." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="chat-page-wrapper">
+
+  <!-- Screen reader / SEO main heading -->
+  <h1 class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
+    Bharath Culture Bot — Centered Chat Page
+  </h1>
+
+  <!-- Center-aligned Chat Window -->
+  <div id="chat-window-page" class="chat-window-centered" role="dialog" aria-modal="true" aria-label="Bharath Culture Bot Chat">
+
+    <!-- Header -->
+    <div class="chat-header">
+      <a href="/" class="chat-close" style="font-size: 1.25rem; text-decoration: none; margin-right: 0.5rem;" aria-label="Back to home" title="Back to home">←</a>
+      <div class="chat-avatar" aria-hidden="true">🪷</div>
+      <div class="chat-header-info">
+        <div class="chat-bot-name">Bharath Culture Bot</div>
+        <div class="chat-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Online · Your Cultural Guide
+        </div>
+      </div>
+      <a href="/" class="chat-close" style="text-decoration: none;" aria-label="Back to home" title="Back to home">✕</a>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-messages" id="chat-messages" aria-live="polite" aria-label="Chat messages"></div>
+
+    <!-- Input -->
+    <div class="chat-input-area">
+      <div class="chat-input-wrapper">
+        <textarea
+          id="chat-input"
+          placeholder="Ask about any Indian state's culture…"
+          rows="1"
+          maxlength="1000"
+          aria-label="Type your message"
+          autocomplete="off"
+        ></textarea>
+      </div>
+      <button id="chat-send" aria-label="Send message" title="Send">➤</button>
+    </div>
+    <div class="char-counter" aria-live="polite">
+      <span id="char-count">0/1000</span>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Chatbot Script -->
+<script src="/js/chatbot.js"></script>
+
+</body>
+</html>

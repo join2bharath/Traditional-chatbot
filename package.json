@@ -1,0 +1,9 @@
+{
+  "name": "bharath-culture-bot",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@netlify/functions": "^3.0.0"
+  }
+}
